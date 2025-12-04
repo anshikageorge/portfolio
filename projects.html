@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Projects - Anshika George</title>
+
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet"/>
+
+<style>
+  body { font-family: 'Inter', sans-serif; }
+  .font-serif-display { font-family: 'Playfair Display', serif; }
+</style>
+
+<script id="tailwind-config">
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        primary: "#30e86e",
+        "background-light": "#f6f8f6",
+        "background-dark": "#112116",
+      },
+      fontFamily: {
+        display: ["Inter"],
+        "serif-display": ["Playfair Display", "serif"],
+      },
+    },
+  },
+}
+</script>
+</head>
+
+<body class="font-display overflow-x-hidden">
+
+<div class="relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark overflow-hidden">
+
+  <!-- Background -->
+  <div class="absolute inset-0 z-0">
+    <div class="absolute inset-0 bg-gradient-to-br from-[#e0f2f1] via-[#f0e6f0] to-[#e6f0ff]
+    dark:from-[#1a2e2c] dark:via-[#2d242d] dark:to-[#1f2a3a]"></div>
+
+    <div class="absolute -bottom-20 -left-20 h-64 w-64 rounded-full
+    bg-primary/20 blur-3xl dark:bg-primary/10 pointer-events-none"></div>
+
+    <div class="absolute -top-24 -right-24 h-72 w-72 rounded-full 
+    bg-[#a7d8ff]/30 blur-3xl dark:bg-[#a7d8ff]/10 pointer-events-none"></div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="relative z-10 py-6 px-4 sm:px-6 md:px-8 lg:px-12">
+    <nav class="flex items-center justify-center">
+      <div class="flex items-center gap-8 rounded-full bg-white/50 px-8 py-3 text-sm font-medium
+      text-slate-800 shadow-sm backdrop-blur-md dark:bg-black/20 dark:text-slate-200">
+        <a href="index.html" class="hover:text-slate-900 dark:hover:text-white">Home</a>
+        <a href="education.html" class="hover:text-slate-900 dark:hover:text-white">Education</a>
+        <a href="experience.html" class="hover:text-slate-900 dark:hover:text-white">Experience</a>
+        <a class="text-slate-900 dark:text-white relative" href="#">
+  Projects
+  <span class="absolute -bottom-1 left-0 h-0.5 w-full bg-primary rounded-full"></span>
+</a>
+        <a href="contact.html" class="hover:text-slate-900 dark:hover:text-white">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="relative z-10 flex-1 px-4 sm:px-6 md:px-8 lg:px-12 py-16">
+    <!-- PAGE CONTENT HERE -->
+  </main>
+
+</div>
+</body>
+</html>
