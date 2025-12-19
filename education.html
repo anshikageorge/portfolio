@@ -1,228 +1,243 @@
 <!DOCTYPE html>
 <html class="light" lang="en">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Education - Anshika George</title>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Education - Anshika George</title>
 
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet" />
 
-<style>
-  body { font-family: 'Inter', sans-serif; }
-  .font-serif-display { font-family: 'Playfair Display', serif; }
-
-  /* Uiverse-style skill pill */
-  .skill-pill {
-    background-color: #444141;
-    border-radius: 9999px;
-    color: #fff;
-    cursor: default;
-    padding: 8px 16px;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 0.03em;
-    border: none;
-    position: relative;
-    overflow: hidden;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    white-space: nowrap;
-  }
-
-  .skill-pill:hover {
-    background-image: linear-gradient(90deg, #53cbef 0%, #dcc66c 50%, #ffa3b6 75%, #53cbef 100%);
-    animation: slidernbw 5s linear infinite;
-    color: #000;
-    transform: translateY(-1px);
-  }
-
-  @keyframes slidernbw {
-    to {
-      background-position: 20vw;
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
     }
-  }
-  .skill-pill {
-  border-radius: 9999px;
-  cursor: default;
-  padding: 8px 16px;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.03em;
-  border: none;
-  position: relative;
-  overflow: hidden;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  white-space: nowrap;
-  /* remove hard-coded background-color and color here */
-}
 
-</style>
+    .font-serif-display {
+      font-family: 'Playfair Display', serif;
+    }
 
-<script id="tailwind-config">
-tailwind.config = {
-  darkMode: "class",
-  theme: {
-    extend: {
-      colors: {
-        primary: "#30e86e",
-        "background-light": "#f6f8f6",
-        "background-dark": "#112116",
+    /* Uiverse-style skill pill */
+    .skill-pill {
+      background-color: #444141;
+      border-radius: 9999px;
+      color: #fff;
+      cursor: default;
+      padding: 8px 16px;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      border: none;
+      position: relative;
+      overflow: hidden;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+    }
+
+    .skill-pill:hover {
+      background-image: linear-gradient(90deg, #53cbef 0%, #dcc66c 50%, #ffa3b6 75%, #53cbef 100%);
+      animation: slidernbw 5s linear infinite;
+      color: #000;
+      transform: translateY(-1px);
+    }
+
+    @keyframes slidernbw {
+      to {
+        background-position: 20vw;
+      }
+    }
+
+    .skill-pill {
+      border-radius: 9999px;
+      cursor: default;
+      padding: 8px 16px;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      border: none;
+      position: relative;
+      overflow: hidden;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+      /* remove hard-coded background-color and color here */
+    }
+  </style>
+
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#30e86e",
+            "background-light": "#f6f8f6",
+            "background-dark": "#112116",
+          },
+          fontFamily: {
+            display: ["Inter"],
+            "serif-display": ["Playfair Display", "serif"],
+          },
+          borderRadius: {
+            xl: "1.5rem",
+          },
+        },
       },
-      fontFamily: {
-        display: ["Inter"],
-        "serif-display": ["Playfair Display", "serif"],
-      },
-      borderRadius: {
-        xl: "1.5rem",
-      },
-    },
-  },
-}
-</script>
+    }
+  </script>
 </head>
 
 <body class="font-display overflow-x-hidden">
 
-<div class="relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark overflow-hidden">
+  <div class="relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark overflow-hidden">
 
-  <!-- Background -->
-  <div class="absolute inset-0 z-0">
-    <div class="absolute inset-0 bg-gradient-to-br from-[#e0f2f1] via-[#f0e6f0] to-[#e6f0ff]
+    <!-- Background -->
+    <div class="absolute inset-0 z-0">
+      <div class="absolute inset-0 bg-gradient-to-br from-[#e0f2f1] via-[#f0e6f0] to-[#e6f0ff]
     dark:from-[#1a2e2c] dark:via-[#2d242d] dark:to-[#1f2a3a]"></div>
 
-    <div class="absolute -bottom-20 -left-20 h-64 w-64 rounded-full
+      <div class="absolute -bottom-20 -left-20 h-64 w-64 rounded-full
     bg-primary/20 blur-3xl dark:bg-primary/10 pointer-events-none"></div>
 
-    <div class="absolute -top-24 -right-24 h-72 w-72 rounded-full 
+      <div class="absolute -top-24 -right-24 h-72 w-72 rounded-full 
     bg-[#a7d8ff]/30 blur-3xl dark:bg-[#a7d8ff]/10 pointer-events-none"></div>
-  </div>
+    </div>
 
-  <!-- Navbar -->
-  <header class="relative z-10 py-6 px-4 sm:px-6 md:px-8 lg:px-12">
-    <nav class="flex items-center justify-center">
-      <div class="flex items-center gap-8 rounded-full bg-white/50 px-8 py-3 text-sm font-medium
-      text-slate-800 shadow-sm backdrop-blur-md dark:bg-black/20 dark:text-slate-200">
-        <a href="index.html" class="hover:text-slate-900 dark:hover:text-white">Home</a>
-        <a class="text-slate-900 dark:text-white relative" href="#">
-          Education
-          <span class="absolute -bottom-1 left-0 h-0.5 w-full bg-primary rounded-full"></span>
-        </a>
-        <a href="experience.html" class="hover:text-slate-900 dark:hover:text-white">Experience</a>
-        <a href="projects.html" class="hover:text-slate-900 dark:hover:text-white">Projects</a>
-        <a href="contact.html" class="hover:text-slate-900 dark:hover:text-white">Contact</a>
-      </div>
-    </nav>
-  </header>
-
-  <!-- Main content -->
-  <main class="relative z-10 flex-1 px-4 sm:px-6 md:px-8 lg:px-12 py-16">
-    <div class="max-w-6xl mx-auto">
-      <!-- Heading -->
-      <div class="text-center mb-12">
-        <h1 class="font-serif-display text-4xl sm:text-5xl md:text-6xl font-bold text-slate-900 dark:text-white">
-          Education &amp; Skills
-        </h1>
-        <p class="mt-4 text-base sm:text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
-          My academic background and the skills I&apos;ve cultivated throughout my journey in design and development.
-        </p>
-      </div>
-
-      <!-- Grid -->
-      <div class="grid gap-8 lg:grid-cols-2">
-        <!-- Left column: Education + Languages -->
-        <div class="space-y-8">
-          <!-- Education card -->
-          <section class="bg-white/80 dark:bg-black/30 rounded-3xl shadow-sm border border-white/60 dark:border-white/10 px-6 sm:px-8 py-6 sm:py-8 backdrop-blur">
-            <h2 class="text-lg font-semibold text-slate-900 dark:text-white mb-4">Education</h2>
-            <div class="space-y-4">
-              <div class="border-b border-slate-200/70 dark:border-slate-700/60 pb-4">
-                <p class="text-sm font-medium text-slate-500 uppercase tracking-wide">Bachelor of Technology in Computer Science</p>
-                <p class="mt-1 text-base font-semibold text-slate-900 dark:text-white">Toc H Institute of Science and Technology, Kochi</p>
-                <p class="mt-0.5 text-sm text-slate-500 dark:text-slate-400">2023 – 2027</p>
-                <p class="mt-0.5 text-sm text-slate-500 dark:text-slate-400">CGPA - 8.62</p>
-              </div>
-              <div>
-                <p class="text-sm font-medium text-slate-500 uppercase tracking-wide">Higher Secondary Education</p>
-                <p class="mt-1 text-base font-semibold text-slate-900 dark:text-white">Bhavans's Munshi Vidyashram, Kochi</p>
-                <p class="mt-0.5 text-sm text-slate-500 dark:text-slate-400">2021 - 2023</p>
-                <p class="mt-0.5 text-sm text-slate-500 dark:text-slate-400">Percentage - 94.4</p>
-              </div>
-            </div>
-          </section>
-
-          <!-- Languages card -->
-          <section class="bg-white/80 dark:bg-black/30 rounded-3xl shadow-sm border border-white/60 dark:border-white/10 px-6 sm:px-8 py-6 sm:py-8 backdrop-blur">
-            <h2 class="text-lg font-semibold text-slate-900 dark:text-white mb-4">Languages</h2>
-            <div class="space-y-4">
-              <div>
-                <p class="text-base font-semibold text-slate-900 dark:text-white">English</p>
-                <p class="text-sm text-slate-500 dark:text-slate-400">Professional Working Proficiency</p>
-              </div>
-              <div>
-                <p class="text-base font-semibold text-slate-900 dark:text-white">Hindi</p>
-                <p class="text-sm text-slate-500 dark:text-slate-400">Elementary Proficiency</p>
-              </div>
-              <div>
-                <p class="text-base font-semibold text-slate-900 dark:text-white">Malayalam</p>
-                <p class="text-sm text-slate-500 dark:text-slate-400">Native</p>
-              </div>
-            </div>
-          </section>
+    <!-- Navbar -->
+    <header class="relative z-10 py-6 px-4 sm:px-6 md:px-8 lg:px-12">
+      <nav class="flex items-center justify-center">
+        <div
+          class="flex items-center gap-4 md:gap-8 rounded-full bg-white/50 px-4 md:px-8 py-3 text-xs md:text-sm font-medium text-slate-800 shadow-sm backdrop-blur-md dark:bg-black/20 dark:text-slate-200 overflow-x-auto max-w-[95vw] whitespace-nowrap">
+          <a href="index.html" class="hover:text-slate-900 dark:hover:text-white">Home</a>
+          <a class="text-slate-900 dark:text-white relative" href="#">
+            Education
+            <span class="absolute -bottom-1 left-0 h-0.5 w-full bg-primary rounded-full"></span>
+          </a>
+          <a href="experience.html" class="hover:text-slate-900 dark:hover:text-white">Experience</a>
+          <a href="projects.html" class="hover:text-slate-900 dark:hover:text-white">Projects</a>
+          <a href="contact.html" class="hover:text-slate-900 dark:hover:text-white">Contact</a>
         </div>
-                <!-- Right column: Technical + Soft skills -->
-        <div class="space-y-8">
-          <!-- Technical skills -->
-          <section class="bg-white/80 dark:bg-black/30 rounded-3xl shadow-sm border border-white/60 dark:border-white/10 px-6 sm:px-8 py-6 sm:py-8 backdrop-blur">
-            <h2 class="text-lg font-semibold text-slate-900 dark:text-white mb-4">Technical Skills</h2>
-            <div class="flex flex-wrap gap-3">
-              <span class="skill-pill bg-[#f3e8ff] text-[#5b3b8a]">C</span>
-              <span class="skill-pill bg-[#f3e8ff] text-[#5b3b8a]">Java</span>
-              <span class="skill-pill bg-[#f3e8ff] text-[#5b3b8a]">Python</span>
-              <span class="skill-pill bg-[#f3e8ff] text-[#5b3b8a]">Javascript</span>
-              <span class="skill-pill bg-[#f3e8ff] text-[#5b3b8a]">Canva</span>
-              <span class="skill-pill bg-[#f3e8ff] text-[#5b3b8a]">Figma</span>
-              <span class="skill-pill bg-[#f3e8ff] text-[#5b3b8a]">HTML5</span>
-              <span class="skill-pill bg-[#f3e8ff] text-[#5b3b8a]">CSS3</span>
-              <span class="skill-pill bg-[#f3e8ff] text-[#5b3b8a]">Tailwind CSS</span>
-              <span class="skill-pill bg-[#f3e8ff] text-[#5b3b8a]">Bootstrap</span>
-              <span class="skill-pill bg-[#f3e8ff] text-[#5b3b8a]">SQL</span>
-              <span class="skill-pill bg-[#f3e8ff] text-[#5b3b8a]">Git</span>
-              <span class="skill-pill bg-[#f3e8ff] text-[#5b3b8a]">GitHub</span>
-            </div>
-          </section>
+      </nav>
+    </header>
 
-          <!-- Soft skills -->
-          <section class="bg-white/80 dark:bg-black/30 rounded-3xl shadow-sm border border-white/60 dark:border-white/10 px-6 sm:px-8 py-6 sm:py-8 backdrop-blur">
-            <h2 class="text-lg font-semibold text-slate-900 dark:text-white mb-4">Soft Skills</h2>
-            <div class="flex flex-wrap gap-3">
-              <span class="skill-pill bg-[#f3e8ff] text-[#5b3b8a]">Communication</span>
-              <span class="skill-pill bg-[#f3e8ff] text-[#5b3b8a]">Teamwork and Collaboration</span>
-              <span class="skill-pill bg-[#f3e8ff] text-[#5b3b8a]">Problem-Solving</span>
-              <span class="skill-pill bg-[#f3e8ff] text-[#5b3b8a]">Leadership</span>
-              <span class="skill-pill bg-[#f3e8ff] text-[#5b3b8a]">Time Management</span>
-              <span class="skill-pill bg-[#f3e8ff] text-[#5b3b8a]">Critical Thinking</span>
-              <span class="skill-pill bg-[#f3e8ff] text-[#5b3b8a]">Adaptability</span>
-              <span class="skill-pill bg-[#f3e8ff] text-[#5b3b8a]">Strong Work Ethic</span>
-            </div>
-          </section>
-        </div> <!-- end right column -->
-      </div> <!-- end grid -->
-    </div> <!-- end container -->
-  </main>
+    <!-- Main content -->
+    <main class="relative z-10 flex-1 px-4 sm:px-6 md:px-8 lg:px-12 py-16">
+      <div class="max-w-6xl mx-auto">
+        <!-- Heading -->
+        <div class="text-center mb-12">
+          <h1 class="font-serif-display text-4xl sm:text-5xl md:text-6xl font-bold text-slate-900 dark:text-white">
+            Education &amp; Skills
+          </h1>
+          <p class="mt-4 text-base sm:text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
+            My academic background and the skills I&apos;ve cultivated throughout my journey in design and development.
+          </p>
+        </div>
 
-</div>
+        <!-- Grid -->
+        <div class="grid gap-8 lg:grid-cols-2">
+          <!-- Left column: Education + Languages -->
+          <div class="space-y-8">
+            <!-- Education card -->
+            <section
+              class="bg-white/80 dark:bg-black/30 rounded-3xl shadow-sm border border-white/60 dark:border-white/10 px-6 sm:px-8 py-6 sm:py-8 backdrop-blur">
+              <h2 class="text-lg font-semibold text-slate-900 dark:text-white mb-4">Education</h2>
+              <div class="space-y-4">
+                <div class="border-b border-slate-200/70 dark:border-slate-700/60 pb-4">
+                  <p class="text-sm font-medium text-slate-500 uppercase tracking-wide">Bachelor of Technology in
+                    Computer Science</p>
+                  <p class="mt-1 text-base font-semibold text-slate-900 dark:text-white">Toc H Institute of Science and
+                    Technology, Kochi</p>
+                  <p class="mt-0.5 text-sm text-slate-500 dark:text-slate-400">2023 – 2027</p>
+                  <p class="mt-0.5 text-sm text-slate-500 dark:text-slate-400">CGPA - 8.62</p>
+                </div>
+                <div>
+                  <p class="text-sm font-medium text-slate-500 uppercase tracking-wide">Higher Secondary Education</p>
+                  <p class="mt-1 text-base font-semibold text-slate-900 dark:text-white">Bhavans's Munshi Vidyashram,
+                    Kochi</p>
+                  <p class="mt-0.5 text-sm text-slate-500 dark:text-slate-400">2021 - 2023</p>
+                  <p class="mt-0.5 text-sm text-slate-500 dark:text-slate-400">Percentage - 94.4</p>
+                </div>
+              </div>
+            </section>
+
+            <!-- Languages card -->
+            <section
+              class="bg-white/80 dark:bg-black/30 rounded-3xl shadow-sm border border-white/60 dark:border-white/10 px-6 sm:px-8 py-6 sm:py-8 backdrop-blur">
+              <h2 class="text-lg font-semibold text-slate-900 dark:text-white mb-4">Languages</h2>
+              <div class="space-y-4">
+                <div>
+                  <p class="text-base font-semibold text-slate-900 dark:text-white">English</p>
+                  <p class="text-sm text-slate-500 dark:text-slate-400">Professional Working Proficiency</p>
+                </div>
+                <div>
+                  <p class="text-base font-semibold text-slate-900 dark:text-white">Hindi</p>
+                  <p class="text-sm text-slate-500 dark:text-slate-400">Elementary Proficiency</p>
+                </div>
+                <div>
+                  <p class="text-base font-semibold text-slate-900 dark:text-white">Malayalam</p>
+                  <p class="text-sm text-slate-500 dark:text-slate-400">Native</p>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- Right column: Technical + Soft skills -->
+          <div class="space-y-8">
+            <!-- Technical skills -->
+            <section
+              class="bg-white/80 dark:bg-black/30 rounded-3xl shadow-sm border border-white/60 dark:border-white/10 px-6 sm:px-8 py-6 sm:py-8 backdrop-blur">
+              <h2 class="text-lg font-semibold text-slate-900 dark:text-white mb-4">Technical Skills</h2>
+              <div class="flex flex-wrap gap-3">
+                <span class="skill-pill bg-[#f3e8ff] text-[#5b3b8a]">C</span>
+                <span class="skill-pill bg-[#f3e8ff] text-[#5b3b8a]">Java</span>
+                <span class="skill-pill bg-[#f3e8ff] text-[#5b3b8a]">Python</span>
+                <span class="skill-pill bg-[#f3e8ff] text-[#5b3b8a]">Javascript</span>
+                <span class="skill-pill bg-[#f3e8ff] text-[#5b3b8a]">Canva</span>
+                <span class="skill-pill bg-[#f3e8ff] text-[#5b3b8a]">Figma</span>
+                <span class="skill-pill bg-[#f3e8ff] text-[#5b3b8a]">HTML5</span>
+                <span class="skill-pill bg-[#f3e8ff] text-[#5b3b8a]">CSS3</span>
+                <span class="skill-pill bg-[#f3e8ff] text-[#5b3b8a]">Tailwind CSS</span>
+                <span class="skill-pill bg-[#f3e8ff] text-[#5b3b8a]">Bootstrap</span>
+                <span class="skill-pill bg-[#f3e8ff] text-[#5b3b8a]">SQL</span>
+                <span class="skill-pill bg-[#f3e8ff] text-[#5b3b8a]">Git</span>
+                <span class="skill-pill bg-[#f3e8ff] text-[#5b3b8a]">GitHub</span>
+              </div>
+            </section>
+
+            <!-- Soft skills -->
+            <section
+              class="bg-white/80 dark:bg-black/30 rounded-3xl shadow-sm border border-white/60 dark:border-white/10 px-6 sm:px-8 py-6 sm:py-8 backdrop-blur">
+              <h2 class="text-lg font-semibold text-slate-900 dark:text-white mb-4">Soft Skills</h2>
+              <div class="flex flex-wrap gap-3">
+                <span class="skill-pill bg-[#f3e8ff] text-[#5b3b8a]">Communication</span>
+                <span class="skill-pill bg-[#f3e8ff] text-[#5b3b8a]">Teamwork and Collaboration</span>
+                <span class="skill-pill bg-[#f3e8ff] text-[#5b3b8a]">Problem-Solving</span>
+                <span class="skill-pill bg-[#f3e8ff] text-[#5b3b8a]">Leadership</span>
+                <span class="skill-pill bg-[#f3e8ff] text-[#5b3b8a]">Time Management</span>
+                <span class="skill-pill bg-[#f3e8ff] text-[#5b3b8a]">Critical Thinking</span>
+                <span class="skill-pill bg-[#f3e8ff] text-[#5b3b8a]">Adaptability</span>
+                <span class="skill-pill bg-[#f3e8ff] text-[#5b3b8a]">Strong Work Ethic</span>
+              </div>
+            </section>
+          </div> <!-- end right column -->
+        </div> <!-- end grid -->
+      </div> <!-- end container -->
+    </main>
+
+  </div>
 </body>
-</html>
 
+</html>
