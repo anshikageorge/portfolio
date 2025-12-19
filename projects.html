@@ -1,300 +1,316 @@
 <!DOCTYPE html>
 <html class="light" lang="en">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Projects - Anshika George</title>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Projects - Anshika George</title>
 
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet" />
 
-<style>
-  body { font-family: 'Inter', sans-serif; }
-  .font-serif-display { font-family: 'Playfair Display', serif; }
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
 
-  /* ----------------- FLIP CARD CSS ----------------- */
-  section.card {
-    position: relative;
-    width: 250px;
-    height: 250px;
-    background-color: #f2f2f2;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    perspective: 1000px;
-    transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  }
-  .card svg {
-    fill: #000;
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    border-radius: 3px;
-  }
-  .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px #000000;
-    background-color: #f2f2f2;
-    color: #ffffff;
-  }
-  .card__content {
-    color: #000000;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: #f2f2f2;
-    transform: rotateX(-90deg);
-    transform-origin: bottom;
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  }
-  .card:hover .card__content {
-    transform: rotateX(0deg);
-  }
-  .card__title {
-    margin: 0;
-    padding-left: 5px;
-    font-size: 24px;
-    color: #000000;
-    font-weight: 700;
-  }
-  .card:hover svg {
-    scale: 0;
-  }
-  .card__description {
-    margin: 10px 0 0;
-    font-size: 14px;
-    color: #000000;
-    line-height: 1.4;
-  }
-  /* From Uiverse.io by Yaya12085 */
-.card {
-  max-width: 300px;
-  border-radius: 0.5rem;
-  background-color: #fff;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  border: 1px solid transparent;
-}
+    .font-serif-display {
+      font-family: 'Playfair Display', serif;
+    }
 
-.card a {
-  text-decoration: none;
-}
+    /* ----------------- FLIP CARD CSS ----------------- */
+    section.card {
+      position: relative;
+      width: 250px;
+      height: 250px;
+      background-color: #f2f2f2;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      perspective: 1000px;
+      transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
 
-.content {
-  padding: 1.1rem;
-}
+    .card svg {
+      fill: #000;
+      transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      border-radius: 3px;
+    }
 
-.image {
-  object-fit: cover;
-  width: 100%;
-  height: 150px;
-  background-color: rgb(239, 205, 255);
-}
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px #000000;
+      background-color: #f2f2f2;
+      color: #ffffff;
+    }
 
-.title {
-  color: #111827;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  font-weight: 600;
-}
+    .card__content {
+      color: #000000;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+      background-color: #f2f2f2;
+      transform: rotateX(-90deg);
+      transform-origin: bottom;
+      transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
 
-.desc {
-  margin-top: 0.5rem;
-  color: #6B7280;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
+    .card:hover .card__content {
+      transform: rotateX(0deg);
+    }
 
-.action {
-  display: inline-flex;
-  margin-top: 1rem;
-  color: #ffffff;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  font-weight: 500;
-  align-items: center;
-  gap: 0.25rem;
-  background-color: #2563EB;
-  padding: 4px 8px;
-  border-radius: 4px;
-}
+    .card__title {
+      margin: 0;
+      padding-left: 5px;
+      font-size: 24px;
+      color: #000000;
+      font-weight: 700;
+    }
 
-.action span {
-  transition: .3s ease;
-}
+    .card:hover svg {
+      scale: 0;
+    }
 
-.action:hover span {
-  transform: translateX(4px);
-}
+    .card__description {
+      margin: 10px 0 0;
+      font-size: 14px;
+      color: #000000;
+      line-height: 1.4;
+    }
 
-</style>
+    /* From Uiverse.io by Yaya12085 */
+    .card {
+      max-width: 300px;
+      border-radius: 0.5rem;
+      background-color: #fff;
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      border: 1px solid transparent;
+    }
 
-<script id="tailwind-config">
-tailwind.config = {
-  darkMode: "class",
-  theme: {
-    extend: {
-      colors: {
-        primary: "#30e86e",
-        "background-light": "#f6f8f6",
-        "background-dark": "#112116",
+    .card a {
+      text-decoration: none;
+    }
+
+    .content {
+      padding: 1.1rem;
+    }
+
+    .image {
+      object-fit: cover;
+      width: 100%;
+      height: 150px;
+      background-color: rgb(239, 205, 255);
+    }
+
+    .title {
+      color: #111827;
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+      font-weight: 600;
+    }
+
+    .desc {
+      margin-top: 0.5rem;
+      color: #6B7280;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
+
+    .action {
+      display: inline-flex;
+      margin-top: 1rem;
+      color: #ffffff;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      font-weight: 500;
+      align-items: center;
+      gap: 0.25rem;
+      background-color: #2563EB;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+
+    .action span {
+      transition: .3s ease;
+    }
+
+    .action:hover span {
+      transform: translateX(4px);
+    }
+  </style>
+
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#30e86e",
+            "background-light": "#f6f8f6",
+            "background-dark": "#112116",
+          },
+          fontFamily: {
+            display: ["Inter"],
+            "serif-display": ["Playfair Display", "serif"],
+          },
+        },
       },
-      fontFamily: {
-        display: ["Inter"],
-        "serif-display": ["Playfair Display", "serif"],
-      },
-    },
-  },
-}
-</script>
+    }
+  </script>
 </head>
 
 <body class="font-display overflow-x-hidden">
 
-<div class="relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark overflow-hidden">
+  <div class="relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark overflow-hidden">
 
-  <!-- Background -->
-  <div class="absolute inset-0 z-0">
-    <div class="absolute inset-0 bg-gradient-to-br from-[#e0f2f1] via-[#f0e6f0] to-[#e6f0ff]
+    <!-- Background -->
+    <div class="absolute inset-0 z-0">
+      <div class="absolute inset-0 bg-gradient-to-br from-[#e0f2f1] via-[#f0e6f0] to-[#e6f0ff]
     dark:from-[#1a2e2c] dark:via-[#2d242d] dark:to-[#1f2a3a]"></div>
 
-    <div class="absolute -bottom-20 -left-20 h-64 w-64 rounded-full
+      <div class="absolute -bottom-20 -left-20 h-64 w-64 rounded-full
     bg-primary/20 blur-3xl dark:bg-primary/10 pointer-events-none"></div>
 
-    <div class="absolute -top-24 -right-24 h-72 w-72 rounded-full 
+      <div class="absolute -top-24 -right-24 h-72 w-72 rounded-full 
     bg-[#a7d8ff]/30 blur-3xl dark:bg-[#a7d8ff]/10 pointer-events-none"></div>
-  </div>
+    </div>
 
-  <!-- Navbar -->
-  <header class="relative z-10 py-6 px-4 sm:px-6 md:px-8 lg:px-12">
-    <nav class="flex items-center justify-center">
-      <div class="flex items-center gap-8 rounded-full bg-white/50 px-8 py-3 text-sm font-medium
-      text-slate-800 shadow-sm backdrop-blur-md dark:bg-black/20 dark:text-slate-200">
-        <a href="index.html" class="hover:text-slate-900 dark:hover:text-white">Home</a>
-        <a href="education.html" class="hover:text-slate-900 dark:hover:text-white">Education</a>
-        <a href="experience.html" class="hover:text-slate-900 dark:hover:text-white">Experience</a>
-        <a class="text-slate-900 dark:text-white relative" href="#">
+    <!-- Navbar -->
+    <header class="relative z-10 py-6 px-4 sm:px-6 md:px-8 lg:px-12">
+      <nav class="flex items-center justify-center">
+        <div
+          class="flex items-center gap-4 md:gap-8 rounded-full bg-white/50 px-4 md:px-8 py-3 text-xs md:text-sm font-medium text-slate-800 shadow-sm backdrop-blur-md dark:bg-black/20 dark:text-slate-200 overflow-x-auto max-w-[95vw] whitespace-nowrap">
+          <a href="index.html" class="hover:text-slate-900 dark:hover:text-white">Home</a>
+          <a href="education.html" class="hover:text-slate-900 dark:hover:text-white">Education</a>
+          <a href="experience.html" class="hover:text-slate-900 dark:hover:text-white">Experience</a>
+          <a class="text-slate-900 dark:text-white relative" href="#">
+            Projects
+            <span class="absolute -bottom-1 left-0 h-0.5 w-full bg-primary rounded-full"></span>
+          </a>
+          <a href="contact.html" class="hover:text-slate-900 dark:hover:text-white">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="relative z-10 flex-1 px-4 sm:px-6 md:px-8 lg:px-12 py-16">
+
+      <!-- PAGE TITLE -->
+      <header class="mb-12 text-center">
+        <h1 class="text-4xl md:text-5xl font-serif-display font-bold text-slate-900">
           Projects
-          <span class="absolute -bottom-1 left-0 h-0.5 w-full bg-primary rounded-full"></span>
-        </a>
-        <a href="contact.html" class="hover:text-slate-900 dark:hover:text-white">Contact</a>
-      </div>
-    </nav>
-  </header>
+        </h1>
+        <p class="mt-3 text-base md:text-lg text-slate-600">
+          A selection of visual explorations and in‑progress builds.
+        </p>
+      </header>
 
-  <!-- MAIN CONTENT -->
- <main class="relative z-10 flex-1 px-4 sm:px-6 md:px-8 lg:px-12 py-16">
+      <!-- DESIGNS HEADING -->
+      <section class="mt-8 w-full">
+        <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-6">
+          Designs
+        </h2>
 
-  <!-- PAGE TITLE -->
-  <header class="mb-12 text-center">
-    <h1 class="text-4xl md:text-5xl font-serif-display font-bold text-slate-900">
-      Projects
-    </h1>
-    <p class="mt-3 text-base md:text-lg text-slate-600">
-      A selection of visual explorations and in‑progress builds.
-    </p>
-  </header>
+        <!-- TOP ROW: 1:1 RATIO -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mb-10">
+          <div class="w-full aspect-square rounded-2xl bg-white/80 shadow-md overflow-hidden">
+            <img src="preevent.PNG" alt="Design 1" class="h-full w-full object-cover" />
+          </div>
 
-  <!-- DESIGNS HEADING -->
-  <section class="mt-8 w-full">
-    <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-6">
-      Designs
-    </h2>
+          <div class="w-full aspect-square rounded-2xl bg-white/80 shadow-md overflow-hidden">
+            <img src="pre-2.PNG" alt="Design 2" class="h-full w-full object-cover" />
+          </div>
 
-     <!-- TOP ROW: 1:1 RATIO -->
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mb-10">
-    <div class="w-full aspect-square rounded-2xl bg-white/80 shadow-md overflow-hidden">
-      <img src="preevent.PNG" alt="Design 1" class="h-full w-full object-cover" />
-    </div>
+          <div class="w-full aspect-square rounded-2xl bg-white/80 shadow-md overflow-hidden">
+            <img src="maker-1.PNG" alt="Design 3" class="h-full w-full object-cover" />
+          </div>
 
-    <div class="w-full aspect-square rounded-2xl bg-white/80 shadow-md overflow-hidden">
-      <img src="pre-2.PNG" alt="Design 2" class="h-full w-full object-cover" />
-    </div>
+          <div class="w-full aspect-square rounded-2xl bg-white/80 shadow-md overflow-hidden">
+            <img src="maker-2.PNG" alt="Design 4" class="h-full w-full object-cover" />
+          </div>
 
-    <div class="w-full aspect-square rounded-2xl bg-white/80 shadow-md overflow-hidden">
-      <img src="maker-1.PNG" alt="Design 3" class="h-full w-full object-cover" />
-    </div>
+          <div class="w-full aspect-square rounded-2xl bg-white/80 shadow-md overflow-hidden">
+            <img src="maker-3.PNG" alt="Design 5" class="h-full w-full object-cover" />
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mb-10">
+          <div class="w-full aspect-square rounded-2xl bg-white/80 shadow-md overflow-hidden">
+            <img src="thank you!.png" alt="Design 1" class="h-full w-full object-cover" />
+          </div>
 
-    <div class="w-full aspect-square rounded-2xl bg-white/80 shadow-md overflow-hidden">
-      <img src="maker-2.PNG" alt="Design 4" class="h-full w-full object-cover" />
-    </div>
+          <div class="w-full aspect-square rounded-2xl bg-white/80 shadow-md overflow-hidden">
+            <img src="fastapi.png" alt="Design 2" class="h-full w-full object-cover" />
+          </div>
 
-    <div class="w-full aspect-square rounded-2xl bg-white/80 shadow-md overflow-hidden">
-      <img src="maker-3.PNG" alt="Design 5" class="h-full w-full object-cover" />
-    </div>
-  </div>
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mb-10">
-    <div class="w-full aspect-square rounded-2xl bg-white/80 shadow-md overflow-hidden">
-      <img src="thank you!.png" alt="Design 1" class="h-full w-full object-cover" />
-    </div>
+          <div class="w-full aspect-square rounded-2xl bg-white/80 shadow-md overflow-hidden">
+            <img src="Pastel Simple Skincare Influencer Carousel Instagram Post.png" alt="Design 3"
+              class="h-full w-full object-cover" />
+          </div>
 
-    <div class="w-full aspect-square rounded-2xl bg-white/80 shadow-md overflow-hidden">
-      <img src="fastapi.png" alt="Design 2" class="h-full w-full object-cover" />
-    </div>
+          <div class="w-full aspect-square rounded-2xl bg-white/80 shadow-md overflow-hidden">
+            <img src="Venue_ Online_.png" alt="Design 4" class="h-full w-full object-cover" />
+          </div>
 
-    <div class="w-full aspect-square rounded-2xl bg-white/80 shadow-md overflow-hidden">
-      <img src="Pastel Simple Skincare Influencer Carousel Instagram Post.png" alt="Design 3" class="h-full w-full object-cover" />
-    </div>
+          <div class="w-full aspect-square rounded-2xl bg-white/80 shadow-md overflow-hidden">
+            <img src="27.09.2024 1.png" alt="Design 5" class="h-full w-full object-cover" />
+          </div>
+        </div>
 
-    <div class="w-full aspect-square rounded-2xl bg-white/80 shadow-md overflow-hidden">
-      <img src="Venue_ Online_.png" alt="Design 4" class="h-full w-full object-cover" />
-    </div>
+        <!-- 3 rows × 5 tiles -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+          <!-- repeat 15 tiles and swap src with your design images -->
+          <div class="w-full aspect-[4/5] rounded-2xl bg-white/80 shadow-md overflow-hidden">
+            <img src="port.png" alt="Design 1" class="h-full w-full object-cover" />
+          </div>
 
-    <div class="w-full aspect-square rounded-2xl bg-white/80 shadow-md overflow-hidden">
-      <img src="27.09.2024 1.png" alt="Design 5" class="h-full w-full object-cover" />
-    </div>
-  </div>
+          <div class="w-full aspect-[4/5] rounded-2xl bg-white/80 shadow-md overflow-hidden">
+            <img src="PitchDeck Successfully completed.png" alt="Design 2" class="h-full w-full object-cover" />
+          </div>
 
-    <!-- 3 rows × 5 tiles -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
-      <!-- repeat 15 tiles and swap src with your design images -->
-      <div class="w-full aspect-[4/5] rounded-2xl bg-white/80 shadow-md overflow-hidden">
-        <img src="port.png" alt="Design 1" class="h-full w-full object-cover" />
-      </div>
+          <div class="w-full aspect-[4/5] rounded-2xl bg-white/80 shadow-md overflow-hidden">
+            <img src="Study Jam-1.png" alt="Design 3" class="h-full w-full object-cover" />
+          </div>
 
-      <div class="w-full aspect-[4/5] rounded-2xl bg-white/80 shadow-md overflow-hidden">
-        <img src="PitchDeck Successfully completed.png" alt="Design 2" class="h-full w-full object-cover" />
-      </div>
+          <div class="w-full aspect-[4/5] rounded-2xl bg-white/80 shadow-md overflow-hidden">
+            <img src="Study Jam - 2.png" alt="Design 4" class="h-full w-full object-cover" />
+          </div>
 
-      <div class="w-full aspect-[4/5] rounded-2xl bg-white/80 shadow-md overflow-hidden">
-        <img src="Study Jam-1.png" alt="Design 3" class="h-full w-full object-cover" />
-      </div>
+          <div class="w-full aspect-[4/5] rounded-2xl bg-white/80 shadow-md overflow-hidden">
+            <img src="Study Jam - 3.png" alt="Design 5" class="h-full w-full object-cover" />
+          </div>
 
-      <div class="w-full aspect-[4/5] rounded-2xl bg-white/80 shadow-md overflow-hidden">
-        <img src="Study Jam - 2.png" alt="Design 4" class="h-full w-full object-cover" />
-      </div>
+          <!-- row 2 -->
+          <div class="w-full aspect-[4/5] rounded-2xl bg-white/80 shadow-md overflow-hidden">
+            <img src="0001-8332146418162425595.png" alt="Design 6" class="h-full w-full object-cover" />
+          </div>
 
-      <div class="w-full aspect-[4/5] rounded-2xl bg-white/80 shadow-md overflow-hidden">
-        <img src="Study Jam - 3.png" alt="Design 5" class="h-full w-full object-cover" />
-      </div>
+          <div class="w-full aspect-[4/5] rounded-2xl bg-white/80 shadow-md overflow-hidden">
+            <img src="1.png" alt="Design 7" class="h-full w-full object-cover" />
+          </div>
 
-      <!-- row 2 -->
-      <div class="w-full aspect-[4/5] rounded-2xl bg-white/80 shadow-md overflow-hidden">
-        <img src="0001-8332146418162425595.png" alt="Design 6" class="h-full w-full object-cover" />
-      </div>
+          <div class="w-full aspect-[4/5] rounded-2xl bg-white/80 shadow-md overflow-hidden">
+            <img src="2.png" alt="Design 8" class="h-full w-full object-cover" />
+          </div>
 
-      <div class="w-full aspect-[4/5] rounded-2xl bg-white/80 shadow-md overflow-hidden">
-        <img src="1.png" alt="Design 7" class="h-full w-full object-cover" />
-      </div>
+          <div class="w-full aspect-square rounded-2xl bg-white/80 shadow-md overflow-hidden">
+            <img src="call for co-lead.png" alt="Design 4" class="h-full w-full object-cover" />
+          </div>
 
-      <div class="w-full aspect-[4/5] rounded-2xl bg-white/80 shadow-md overflow-hidden">
-        <img src="2.png" alt="Design 8" class="h-full w-full object-cover" />
-      </div>
+          <div class="w-full aspect-square rounded-2xl bg-white/80 shadow-md overflow-hidden">
+            <img src="xxx.png" alt="Design 5" class="h-full w-full object-cover" />
+          </div>
 
-      <div class="w-full aspect-square rounded-2xl bg-white/80 shadow-md overflow-hidden">
-      <img src="call for co-lead.png" alt="Design 4" class="h-full w-full object-cover" />
-    </div>
-
-    <div class="w-full aspect-square rounded-2xl bg-white/80 shadow-md overflow-hidden">
-      <img src="xxx.png" alt="Design 5" class="h-full w-full object-cover" />
-    </div>
-
-      <!-- row 3 
+          <!-- row 3 
       <div class="w-full aspect-[4/5] rounded-2xl bg-white/80 shadow-md overflow-hidden">
         <img src="design11.jpg" alt="Design 11" class="h-full w-full object-cover" />
       </div>
@@ -316,94 +332,87 @@ tailwind.config = {
       </div>
     </div>-->
 
-  </section> 
-<!-- PPT DESIGNS : FULL WIDTH 16:9 -->
-<section class="mt-20 w-full">
-  <div class="w-full px-4 sm:px-6 lg:px-12">
-    
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+      </section>
+      <!-- PPT DESIGNS : FULL WIDTH 16:9 -->
+      <section class="mt-20 w-full">
+        <div class="w-full px-4 sm:px-6 lg:px-12">
 
-      <div class="relative w-full aspect-video rounded-2xl bg-white shadow-xl overflow-hidden flex items-center justify-center">
-        <img 
-          src="Tinker.jpg"
-          alt="PPT Design 1"
-          class="w-full h-full object-cover block"
-          onerror="this.style.display='none'"
-        />
-        <span class="absolute text-slate-400 text-sm"></span>
-      </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
 
-      <div class="relative w-full aspect-video rounded-2xl bg-white shadow-xl overflow-hidden flex items-center justify-center">
-        <img 
-          src="P A N E L D I S C U S S I O N.png"
-          alt="PPT Design 2"
-          class="w-full h-full object-cover block"
-          onerror="this.style.display='none'"
-        />
-        <span class="absolute text-slate-400 text-sm"></span>
-      </div>
+            <div
+              class="relative w-full aspect-video rounded-2xl bg-white shadow-xl overflow-hidden flex items-center justify-center">
+              <img src="Tinker.jpg" alt="PPT Design 1" class="w-full h-full object-cover block"
+                onerror="this.style.display='none'" />
+              <span class="absolute text-slate-400 text-sm"></span>
+            </div>
 
-      <div class="relative w-full aspect-video rounded-2xl bg-white shadow-xl overflow-hidden flex items-center justify-center">
-        <img 
-          src="THIS WEEK’S SPOTLIGHT.jpg"
-          alt="PPT Design 3"
-          class="w-full h-full object-cover block"
-          onerror="this.style.display='none'"
-        />
-        <span class="absolute text-slate-400 text-sm"></span>
-      </div>
+            <div
+              class="relative w-full aspect-video rounded-2xl bg-white shadow-xl overflow-hidden flex items-center justify-center">
+              <img src="P A N E L D I S C U S S I O N.png" alt="PPT Design 2" class="w-full h-full object-cover block"
+                onerror="this.style.display='none'" />
+              <span class="absolute text-slate-400 text-sm"></span>
+            </div>
 
-    </div>
+            <div
+              class="relative w-full aspect-video rounded-2xl bg-white shadow-xl overflow-hidden flex items-center justify-center">
+              <img src="THIS WEEK’S SPOTLIGHT.jpg" alt="PPT Design 3" class="w-full h-full object-cover block"
+                onerror="this.style.display='none'" />
+              <span class="absolute text-slate-400 text-sm"></span>
+            </div>
 
-  </div>
-</section>
+          </div>
 
-    <!-- PROJECTS HEADING -->
-<section class="mt-12">
-  <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-6">
-    Projects
-  </h2>
+        </div>
+      </section>
 
-  <!-- Purple Image Highlight Section -->
-  
+      <!-- PROJECTS HEADING -->
+      <section class="mt-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-6">
+          Projects
+        </h2>
 
-  <!-- Project Tiles -->
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
-    <!-- Tile 1 -->
-    <div class="card">
-      <div class="image" style="background-image:url('nasa.jpg'); background-size:cover;"></div>
-      <div class="content">
-        <a href="#">
-          <span class="title">NASA Space Explorer</span>
-        </a>
-        <p class="desc">
-          An interactive, kid-friendly space dashboard featuring real-time NASA imagery, asteroid tracking, and AI-powered trivia set against a cosmic backdrop.
-        </p>
-        <a class="action" href="https://nasa-space-explorer-one.vercel.app/" target="_blank">
-          View Project
-          <span aria-hidden="true">→</span>
-        </a>
-      </div>
-    </div>
+        <!-- Purple Image Highlight Section -->
 
-    <!-- Tile 2 -->
-    <div class="card">
-      <div class="image" style="background-image:url('pixel.jpg'); background-size:cover;"></div>
-      <div class="content">
-        <a href="#">
-          <span class="title">Pixel Mood Diary</span>
-        </a>
-        <p class="desc">
-          A 52x7 grid where each day is a pixel that the user colors based on mood and the year gradually forms a mosaic.
-        </p>
-        <a class="action" href="https://mood-diary-tau-neon.vercel.app/" target="_blank">
-          View Project
-          <span aria-hidden="true">→</span>
-        </a>
-      </div>
-    </div>
 
-    <!-- Tile 3 
+        <!-- Project Tiles -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+          <!-- Tile 1 -->
+          <div class="card">
+            <div class="image" style="background-image:url('nasa.jpg'); background-size:cover;"></div>
+            <div class="content">
+              <a href="#">
+                <span class="title">NASA Space Explorer</span>
+              </a>
+              <p class="desc">
+                An interactive, kid-friendly space dashboard featuring real-time NASA imagery, asteroid tracking, and
+                AI-powered trivia set against a cosmic backdrop.
+              </p>
+              <a class="action" href="https://nasa-space-explorer-one.vercel.app/" target="_blank">
+                View Project
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Tile 2 -->
+          <div class="card">
+            <div class="image" style="background-image:url('pixel.jpg'); background-size:cover;"></div>
+            <div class="content">
+              <a href="#">
+                <span class="title">Pixel Mood Diary</span>
+              </a>
+              <p class="desc">
+                A 52x7 grid where each day is a pixel that the user colors based on mood and the year gradually forms a
+                mosaic.
+              </p>
+              <a class="action" href="https://mood-diary-tau-neon.vercel.app/" target="_blank">
+                View Project
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Tile 3 
     <div class="card">
       <div class="image" style="background-image:url('project3.jpg'); background-size:cover;"></div>
       <div class="content">
@@ -420,7 +429,7 @@ tailwind.config = {
       </div>
     </div> -->
 
-    <!-- Tile 4 
+          <!-- Tile 4 
     <div class="card">
       <div class="image" style="background-image:url('project4.jpg'); background-size:cover;"></div>
       <div class="content">
@@ -437,13 +446,14 @@ tailwind.config = {
       </div>
     </div>-->
 
+        </div>
+      </section>
+
+
+    </main>
+
+
   </div>
-</section>
-
-
-</main>
-
-
-</div>
 </body>
+
 </html>
