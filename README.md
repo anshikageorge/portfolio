@@ -1,7 +1,7 @@
 # 🌟 Anshika Mariyam George — Portfolio
 
 Welcome to the source code for **my personal portfolio website** hosted at:  
-👉 https://anshikageorge.github.io/portfolio/
+👉 
 
 ## 👋 About Me
 
@@ -18,7 +18,7 @@ The live site includes:
 - 💡 **Projects** — showcase of my work  
 - 📬 **Contact** — how to reach me
 
-👉 Check out the deployed version here: https://anshikageorge.github.io/portfolio/
+👉 Check out the deployed version here:
 
 ## 🚀 Technologies Used
 
